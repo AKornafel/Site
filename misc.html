@@ -3,15 +3,15 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Abigail Kornafel | Misc</title>
+        <title>Abigail Kornafel | Projects</title>
         <link rel="stylesheet" type="text/css" href="style.css">
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>   
         
 
         
     </head>
-    <body>
-    	<h1 class="abtTitle">Miscellaneous</h1>
+    <body style="background-color:#9F9E9E">
+    	<h1 class="abtTitle">Projects</h1>
     	<div id="buttons">
     		<button id="b1" class="but"><a href="index.html">Home</a></button>
     		<button id="b2" class="but"><a href="about.html">About</a></button>
@@ -19,8 +19,36 @@
 
     	</div>
     	
-    	<p style="margin-top:20%; text-align: center; 	font-family: Arial, Helvetica, sans-serif; font-size: 16px;">coming soon</p>
+    	<p id="res3" >
+            <span class="big">Tutor Connect</span>
+            <br><span class="little">10/2019 - Present, Social Networks</span>
+            <br>Tutoring at NYU is perceived by students as disorganized due to insufficient methods of communication when tutors can’t attend their scheduled intervals.  When specific NYU tutors are unable to attend their tutoring sessions, students are left without easily accessible information pertaining to their abrupt schedule modifications. The outside communication between tutors and students is usually limited at most to an impromptu update via mass email or class forum such as Piazza in the case of dedicated tutoring for specific courses; other more general tutoring lacks even these methods. Changes that don’t affect whether the tutor can attend or not, such as an abrupt room change, can result in confusion and a loss of valuable tutoring time for a student. As such, tutors should have some quick and convenient way of documenting any changes that make it easy for students to check and adjust accordingly. In order to address this problem, we're creating a simple application that does just that. The app will have calendars according to specific courses that show the days there is tutoring, the location, the tutors, the hours, and any important changes. 
 
+            <br>
+            <br>
+            <span class="big">Seeker</span>
+        <br><span class="little">10/2019 - Present, Large Scale Web Applications</span>
+        <br>Seeker is a lost and found service in which users will be able to register with a website and print out unique QR codes to stick onto their belongings.  If the user loses a registered item and it is recovered by another person, the finder can scan the QR code and notify the owner so it may be retreived. <br>
+        Users will register for the website and their information will be stored in a database.  A user is someone who wants to register their items under their account and have QR codes generated for them.  When a user logs in, they will be able to access a page that has their QR codes with the name of the device it is linked to, some information about the item, and a print button underneath it. In this page the user can also delete or add a new QR code. If a user wants to print a QR code they can click on the print button underneath. If the user wants to make a new QR code, they hit the button to create a new one and fill out a form. Each QR code must be unique across the system. 
+        <br>
+        When an item is found, scanning the QR code will send the finder to a web page where they can either sign in and have their contact information sent to the owner or, in the case where they do not have an account, fill out a form. The finder can fill out the form with their contact information and have it sent to the owner in the form of an email.
+    
+        <br><br>Language and Technologies:<br>
+        The website will run on an Apache server. The lost and found service will be developed using Django written in Python. The database management system will be MySQL. For the QR codes, we will be using Django QR Code. The front-end will be designed with simple HTML and CSS.
+        <br><br>
+        <span class="big">Class Scheduling Program</span>
+        <br><span class="little">10/2017 - 11/2017, Data Structures</span>
+        <br>The class scheduling program allows students and administrators to login and perform actions specific to the type of user.  Once logged in, students have access to a list of available courses and may register for a course, withdraw from a course, or view a list of their currently enrolled courses.  Teachers are given more manipulative access to the data and can create or delete a course, edit a current course, and register or remove a student from a course. Serialization and deserialization are used to recover user and course updated data.  
+        <br><br>Language and Technologies:<br>
+        The class scheduling program uses data stored in a CSV file and is coded soley in Java. 
+        <br>
+    </p>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
 
        
        <footer style="display:table-cell; vertical-align:middle; text-align:center">
@@ -30,5 +58,35 @@
 </footer>
 
        <script src="ja.js"></script> 
+    <style>
+       @media only screen and (max-width: 1000px) {
+
+        #res3{
+            margin-top: 10%;
+            /*color:pink;*/
+        }
+       }
+       @media only screen and (max-width: 850px) {
+
+        #res3{
+            margin-top: 15%;
+            /*color:green;*/
+        }
+       }
+       @media only screen and (max-width: 650px) {
+
+        #res3{
+            margin-top: 20%;
+            /*color:blue;*/
+        }
+       }
+       @media only screen and (max-width: 490px) {
+
+        #res3{
+            margin-top: 29%;
+            /*color:black;*/
+        }
+       }
+   </style>
     </body>
 </html>
